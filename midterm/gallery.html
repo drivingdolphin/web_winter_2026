@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .slide-container {
+            background-color: lightcyan;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slides {
+            display: flex;
+            width: 80%;
+            height: 150px;
+            animation: slide 10s infinite ease-in-out;
+        }
+
+        .slides img {
+            width: 80%;
+            object-fit: cover;
+        }
+
+        @keyframes slide {
+            0% {
+                margin-left: 0%
+            }
+            33% {
+                margin-left: -50%;
+            }
+            66% {
+                margin-left: -100%;
+            }
+            100% {
+                margin-left: 0%;
+            }
+        }
+
+        .slides2 {
+            margin-top: 300px;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            animation: slideRight 10s infinite ease-in-out;
+        }
+        .slides2 img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes slideRight {
+            0% {
+                margin-left: 0%
+            }
+            33% {
+                margin-left: 33%;
+            }
+            66% {
+                margin-left: 66%;
+            }
+            100% {
+                margin-left: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+             <ul class="nav">
+                <li class="nav li"><b><a href="index.html">Home</a></b></li>
+                <li class="nav li"><b><a href="about.html">About</a></b></li>
+                <li class="nav li"><b><a href="gallery.html">Photo Gallery</a></b></li>
+            </ul>
+        </div>
+        <h1>Welcome to the Photo Gallery!</h1>
+        <h2>This is a page to view Toffee (my dog)'s photos. For more information about Toffee, view the <a href="about.html">About Page</a></h2>
+        <h2>Information about the following photos (numbered 1-6 for left to right, then top to bottom): 
+        </h2>
+        <ol>
+            <span class="large-text"><li>Toffee lying on his favorite couch with his purple blanket that he stole from me</li>
+            <li>Toffee taking a nap on his least favorite couch, lured there by treats and surrendering to fatigue</li>
+            <li>Toffee eating his favorite snack (yogurt) while laying down on his bed</li>
+            <li>Toffee in his crate on his large dog bed</li>
+            <li>Toffee waiting patiently for a treat after performing "sit"</li>
+            <li>Side view of Toffee lying on his favorite couch</li>
+            </span>
+        </ol>
+        <br>
+        <h2>Scroll down for the image slideshow (If you would like a more accessible format with captions next to the pictures, scroll past the slideshow)</h2>
+        
+        <div class="slide-container">
+            <div class="slides">
+                <img src="images/toffee-couch.jpg" class="gallery-image" >
+                <img src="images/toffee-haircut-couch.jpg" class="gallery-image">
+                <img src="images/toffee-lazy.jpg" class="gallery-image">
+            </div>
+            
+            <div class="slides2">
+                <img src="images/toffee-bed.jpg" alt="" class="gallery-image">
+                <img src="images/toffee-sit.jpg" alt="" class="gallery-image">
+                <img src="images/toffee-draping-head.jpg" alt="" class="gallery-image">
+            </div>
+        </div>
+            <hr>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="images/toffee-couch.jpg" width="420px" class="centered">
+            <p>Image 1: Toffee lying on his favorite couch with his purple blanket that he stole from me</p>
+            <img src="images/toffee-haircut-couch.jpg" width="420px" class="centered"> 
+            <p>Image 2: Toffee taking a nap on his least favorite couch, lured there by treats and surrendering to fatigue</p>
+            <img src="images/toffee-lazy.jpg" width="420px" class="centered">
+            <p>Toffee eating his favorite snack (yogurt) while laying down on his bed</p>
+            <img src="images/toffee-bed.jpg" alt="" width="420px" class="centered">
+            <p>Toffee in his crate on his large dog bed</p>
+            <img src="images/toffee-sit.jpg" alt="" width="420px" class="centered">
+            <p>Toffee waiting patiently for a treat after performing "sit"</p>
+            <img src="images/toffee-draping-head.jpg" alt="" width="420px" class="centered">
+            <p>Side view of Toffee lying on his favorite couch</p>
+            
+        </body>
+</html>
